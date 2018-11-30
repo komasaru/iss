@@ -14,7 +14,7 @@
 実行方法
 ========
 
-`./tle2rv [YYYYMMDD[HHMMSS[MMM]]]`
+`./get_iss_pv [YYYYMMDD[HHMMSS[MMM]]]`
 
 * UT1（世界時1）は「年・月・日・時・分・秒・ミリ秒」を最大17桁で指定する。
 * UT1（世界時1）を指定しない場合は、システム日時を UT1 とみなす。

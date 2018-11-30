@@ -221,6 +221,7 @@ contains
       stop
     end if
 
+    tle   = ""
     buf_p = ""
     do
       read (UID, '(A)', iostat = ios) buf

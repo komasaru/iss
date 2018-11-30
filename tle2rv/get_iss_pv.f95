@@ -121,6 +121,7 @@ contains
       stop
     end if
 
+    tle   = ""
     buf_p = ""
     do
       read (UID, '(A)', iostat = ios) buf
@@ -137,6 +138,7 @@ contains
         read (buf(21:32), '(F12.8)') d
         call add_day(t_time(y, 1, 1, 0, 0, 0, 0), d, utc)
         write (s_utc, FMT_DT_1) utc
+        print *, s_utc
         if (s_utc > s_ut1) then
           tle = buf_p
           exit
